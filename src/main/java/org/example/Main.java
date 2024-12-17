@@ -5,5 +5,6 @@ public class Main {
         System.out.println("Hello World! (Jenkins TEST)");
         System.out.println("Hello World! (Jenkins TEST1)");
         System.out.println("Hello World! (Jenkins TEST2)");
+        System.out.println("Hello World! (Jenkins TEST3)");
     }
 }
