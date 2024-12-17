@@ -15,11 +15,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <version>3.7.1</version>
-        </dependency>
     </dependencies>
 
 
@@ -36,16 +31,13 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.7.1</version>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
                     <archive>
-                        <manifest>
-                            <mainClass>Main</mainClass>
-                        </manifest>
+                        <manifestEntries>
+                            <Main-Class>org.example.Main</Main-Class> <!-- Replace with your actual main class -->
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
